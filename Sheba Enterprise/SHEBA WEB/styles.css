@@ -14,7 +14,7 @@
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     background-color: #ffffff;
-    border-radius: 25px 25px 10px 10px;
+    border-radius: 25px;
     scroll-behavior: none;
     -webkit-overflow-scrolling: auto;
     
@@ -23,9 +23,13 @@
     scroll-snap-type: mandatory;
     */
   }
+
+/* Scroll Design */
+
   .services::-webkit-scrollbar {
     width: 5%;
     height: 15px;
+    display: none;
   }
   .services::-webkit-scrollbar-thumb {
     background: #ff0000;
@@ -57,29 +61,6 @@
   .services > div:target {
   /*   transform: scale(0.8); */
   }
-  .author-info {
-    background: rgba(0, 0, 0, 0.75);
-    color: white;
-    padding: 0.75rem;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    margin: 0;
-  }
-  .author-info a {
-    color: white;
-  }
-  img {
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 70%;
-    height: 70%;
-  }
-  
   .servicer > a {
     display: inline-flex;
     padding: 15px;
@@ -97,7 +78,10 @@
     color: rgb(255, 238, 0);
   }
   .servicer > a:focus {
-    background: #000000;
+    background: #ffe0e0;
+    color: black;
+    color: black;
+    border: 2px solid #555555;
   }
    
   html, body {
@@ -108,7 +92,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom, #74ABE2, #5563DE);
+    background: #ffe0e0;
     font-family: 'Ropa Sans', sans-serif;
   }
   
+
+object { margin: 15px; }
+
+  object:hover {
+    border-radius: 15px;
+    box-shadow: 0 0 20px 10px rgba(0, 140, 186, 0.5);}
