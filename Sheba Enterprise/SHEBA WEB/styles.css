@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  }
+  
+  .servicer {
+    width: 95%;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .services {
+    display: flex;
+    padding: 16px 32px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    background-color: #ffffff;
+    border-radius: 25px 25px 10px 10px;
+    scroll-behavior: none;
+    -webkit-overflow-scrolling: auto;
+    
+    /*
+    scroll-snap-points-x: repeat(300px);
+    scroll-snap-type: mandatory;
+    */
+  }
+  .services::-webkit-scrollbar {
+    width: 5%;
+    height: 15px;
+  }
+  .services::-webkit-scrollbar-thumb {
+    background: #ff0000;
+    border-radius: 100px;
+  }
+  .services::-webkit-scrollbar-thumb:hover {
+    background: #15ff00;
+    border-radius: 100px;
+
+  }
+  .services::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 50px;
+  }
+
+  /* Services */
+
+  .services > div {
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+  }
+  .services > div:target {
+  /*   transform: scale(0.8); */
+  }
+  .author-info {
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 0.75rem;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+  }
+  .author-info a {
+    color: white;
+  }
+  img {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 70%;
+  }
+  
+  .servicer > a {
+    display: inline-flex;
+    padding: 15px;
+    background: white;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    margin: 0 0 0.5rem 0;
+    position: relative;
+    cursor: pointer;
+  }
+  .servicer > a:active {
+    top: 1px;
+    color: rgb(255, 238, 0);
+  }
+  .servicer > a:focus {
+    background: #000000;
+  }
+   
+  html, body {
+    height: 100%;
+    overflow: hidden;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #74ABE2, #5563DE);
+    font-family: 'Ropa Sans', sans-serif;
+  }
+  
